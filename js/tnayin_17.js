@@ -202,3 +202,4 @@
 // const {one, two, three, four, aboutMyArmenia} = bigCountrys;
 // aboutMyArmenia();
 // console.log(one, two, three, four);
+
