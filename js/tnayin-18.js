@@ -60,19 +60,19 @@
 //3․  ստեղծում եք մեկ հատ Array, 10 հատ item-ներով, 5 item-ը պետք ա լինեն Array-ներ, ու for in-ով ու 
 //for of-ով անում եք այնպես,որ կոնսոլում տպվեն համ առաջին մակարդակի item-ները համ 2րդ մակարդակի (Զանգվածի մեջ զանգված)
 
-const array = ["item1", "item2", "item3", "item4", "item5",
- [[["item6"]]], [["item7"]], [["item8"]], [["item9"]], ["item10"]];
+// const array = ["item1", "item2", "item3", "item4", "item5",
+//  [[["item6"]]], [["item7"]], [["item8"]], [["item9"]], ["item10"]];
 
-for (let i in array) {
-    if(typeof array[i] === "array") {
-        for (let j in array[i]) {
-            console.log(`index: ${j} value: ${array[i][j]}`);
-        }
-    } else {
-        console.log(`index: ${i}, value: ${array[i]}`);
+// for (let i in array) {
+//     if(typeof array[i] === "array") {
+//         for (let j in array[i]) {
+//             console.log(`index: ${j} value: ${array[i][j]}`);
+//         }
+//     } else {
+//         console.log(`index: ${i}, value: ${array[i]}`);
 
-    }
-}
+//     }
+// }
 
 // for (let i of array) {
 //     console.log(i);
