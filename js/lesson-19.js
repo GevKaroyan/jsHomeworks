@@ -16,7 +16,7 @@
 
 
 
-let numberOfFilms;
+const numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
 
 const personalMovieDB = {
 	count: numberOfFilms,
@@ -26,13 +26,12 @@ const personalMovieDB = {
 	privat: true,
 
 	start(numberOfFilms) {
-		numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
 
 		while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms) || numberOfFilms < -1) {
-			numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
+			return numberOfFilms;
+
 		}
 
-		return numberOfFilms;
 	},
 
 	rememberMyFilms() {
@@ -83,9 +82,9 @@ const personalMovieDB = {
 	},
 	isVisibleMyDB() {
 		if (personalMovieDB.privat) {
-			console.log(!personalMovieDB);
+			console.log(!personalMovieDB.privat);
 		} else {
-			console.log(!personalMovieDB);
+			console.log(personalMovieDB.privat);
 		}
 	}
 };
