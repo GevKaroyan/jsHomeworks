@@ -27,11 +27,11 @@ const personalMovieDB = {
 
 	start(numberOfFilms) {
 
+
 		while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms) || numberOfFilms < -1) {
-			return numberOfFilms;
-
+			numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
 		}
-
+		return numberOfFilms;
 	},
 
 	rememberMyFilms() {
