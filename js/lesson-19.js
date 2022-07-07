@@ -16,7 +16,7 @@
 
 
 
-const numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
+let numberOfFilms;
 
 const personalMovieDB = {
 	count: numberOfFilms,
